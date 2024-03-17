@@ -8,6 +8,19 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy  =>
+                      {
+                          policy.WithOrigins("http://127.0.0.1",
+                                              "http://localhost")
+                                              .AllowAnyHeader()
+                                              .AllowAnyMethod();;
+                      });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -53,6 +66,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
