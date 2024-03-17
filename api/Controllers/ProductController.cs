@@ -1,13 +1,13 @@
 using api.Dto;
 using api.Interfaces;
-using api.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController, Authorize]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;

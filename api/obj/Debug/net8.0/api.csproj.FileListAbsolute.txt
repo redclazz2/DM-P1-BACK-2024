@@ -138,3 +138,7 @@ C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\runtimes\win\lib\net6.
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Scrutor.dll
+C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
