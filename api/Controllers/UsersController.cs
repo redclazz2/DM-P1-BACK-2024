@@ -105,7 +105,7 @@ namespace api.Controllers
             //Build the token
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires: DateTime.Now.AddDays(7),
+                expires: DateTime.Now.AddSeconds(7),
                 signingCredentials: cred   
             );
 
