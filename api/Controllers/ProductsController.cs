@@ -13,18 +13,38 @@ namespace api.Controllers
         private readonly IProductRepository _productRepository;
         private IMapper _mapper;
 
-        public ProductsController(IProductRepository _productRepository, IMapper _mapper){
+        public ProductsController(IProductRepository _productRepository, IMapper _mapper)
+        {
             this._mapper = _mapper;
             this._productRepository = _productRepository;
         }
 
         [HttpGet]
-        [ProducesResponseType(200,Type = typeof(IEnumerable<ProductDto>))]
-        public IActionResult GetProducts(){
+        [ProducesResponseType(200, Type = typeof(IEnumerable<ProductDto>))]
+        public IActionResult GetProducts()
+        {
             var products = _mapper.Map<List<ProductDto>>(_productRepository.GetProducts());
-            if(ModelState.IsValid){
+            if (ModelState.IsValid)
+            {
                 return Ok(products);
-            }else{
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+        }
+
+        [HttpGet("{userId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<ProductDto>))]
+        public IActionResult GetFavoriteProducts(int userId)
+        {
+            var products = _mapper.Map<List<ProductDto>>(_productRepository.GetFavoriteProducts(userId));
+            if (ModelState.IsValid)
+            {
+                return Ok(products);
+            }
+            else
+            {
                 return BadRequest(ModelState);
             }
         }

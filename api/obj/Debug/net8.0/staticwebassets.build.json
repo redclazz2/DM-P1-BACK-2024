@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3L3N/IJU1/vNoE6SsT5N1nPtjUfoh0YKc3LkXsEumjY=",
+  "Hash": "p0qW0lKpG7YNEaNZjj+mPqD21IbkBcX7VhEOoH83pb0=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\pikmin4.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/pikmin4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\pikmin4.jpg"
+    },
     {
       "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\splatoon2.jpg",
       "SourceId": "api",
@@ -53,6 +72,63 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\splatoon3.png"
+    },
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\thelast.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/thelast.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\thelast.jpg"
+    },
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\zeldabreath.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/zeldabreath.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\zeldabreath.jpg"
+    },
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\zeldatears.webp",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/zeldatears.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\zeldatears.webp"
     }
   ]
 }

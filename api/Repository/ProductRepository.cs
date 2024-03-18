@@ -16,6 +16,12 @@ namespace api.Repository
             this._context = _context;
         }
 
+        public ICollection<Product> GetFavoriteProducts(int userId)
+        {
+            return _context.FavoriteProducts.Where(f => f.UserId == userId)
+                .Select(p => p.Product).ToList();
+        }
+
         public ICollection<Product> GetProducts()
         {
             return _context.Products.OrderBy(p => p.Id).ToList();

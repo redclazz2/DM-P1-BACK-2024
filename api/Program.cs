@@ -8,17 +8,17 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy  =>
+                      policy =>
                       {
                           policy.WithOrigins("http://127.0.0.1",
                                               "http://localhost")
                                               .AllowAnyHeader()
-                                              .AllowAnyMethod();;
+                                              .AllowAnyMethod(); ;
                       });
 });
 
