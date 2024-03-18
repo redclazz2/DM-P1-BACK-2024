@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "pyaMSCEWRZ4nvKCja2XnniyJFEBxfxA7VVvbHvFd6MQ=",
+  "Hash": "3L3N/IJU1/vNoE6SsT5N1nPtjUfoh0YKc3LkXsEumjY=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "api\\wwwroot",
+      "Source": "api",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\splatoon2.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/splatoon2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\splatoon2.jpg"
+    },
+    {
+      "Identity": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\Images\\splatoon3.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PersonalDev\\PM-01\\DM-P1-BACK-2024\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Images/splatoon3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\splatoon3.png"
+    }
+  ]
 }

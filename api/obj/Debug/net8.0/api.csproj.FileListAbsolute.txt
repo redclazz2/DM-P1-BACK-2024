@@ -142,3 +142,4 @@ C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Microsoft.AspNetCore.A
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Scrutor.dll
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\PersonalDev\PM-01\DM-P1-BACK-2024\api\bin\Debug\net8.0\api.staticwebassets.runtime.json
