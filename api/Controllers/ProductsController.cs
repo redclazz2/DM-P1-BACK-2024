@@ -8,12 +8,12 @@ namespace api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController, Authorize]
-    public class ProductController : Controller
+    public class ProductsController : Controller
     {
         private readonly IProductRepository _productRepository;
         private IMapper _mapper;
 
-        public ProductController(IProductRepository _productRepository, IMapper _mapper){
+        public ProductsController(IProductRepository _productRepository, IMapper _mapper){
             this._mapper = _mapper;
             this._productRepository = _productRepository;
         }

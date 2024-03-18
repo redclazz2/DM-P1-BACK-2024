@@ -12,13 +12,13 @@ namespace api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         private readonly IUserRepository _userRepository;
         private IMapper _mapper;
         private readonly IConfiguration _configuration;
 
-        public UserController(IUserRepository _userRepository, IMapper _mapper, IConfiguration _configuration)
+        public UsersController(IUserRepository _userRepository, IMapper _mapper, IConfiguration _configuration)
         {
             this._mapper = _mapper;
             this._configuration = _configuration;
