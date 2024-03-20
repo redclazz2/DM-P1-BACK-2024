@@ -49,27 +49,30 @@ namespace api.Controllers
                 return BadRequest(ModelState);
             }
         }
-    
-        [HttpPost("Favorite/Create")]
+
+        [HttpPost("Favorite")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(422)]
         [ProducesResponseType(500)]
         public IActionResult CreateFavorite(
             [FromBody] FavoriteDto favorite
-        ){
+        )
+        {
             var _favorite = _productRepository.GetFavoriteProducts(favorite.UserId).
                 Where(p => p.Id == favorite.ProductId).FirstOrDefault();
-            
-            if(_favorite != null){
-                ModelState.AddModelError("","Favorite product already exists");
-                return StatusCode(422,ModelState);
+
+            if (_favorite != null)
+            {
+                ModelState.AddModelError("", "Favorite product already exists");
+                return StatusCode(422, ModelState);
             }
 
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            
-            if(!_productRepository.CreateFavorite(favorite)){
+
+            if (!_productRepository.CreateFavorite(favorite))
+            {
                 ModelState.AddModelError("", "Something went wrong when creating a favorite");
                 return StatusCode(500, ModelState);
             }
@@ -77,10 +80,30 @@ namespace api.Controllers
             return Ok("Success");
         }
 
-        public IActionResult DeleteFavorite([FromBody] 
-            FavoriteDto favoriteDto){
-                //TODO
-                return Ok("");
+        [HttpDelete("Favorite")]
+        public IActionResult DeleteFavorite([FromBody]
+            FavoriteDto favorite)
+        {
+            var _favorite = _productRepository.GetFavoriteProducts(favorite.UserId).
+                Where(p => p.Id == favorite.ProductId).FirstOrDefault();
+
+            if (_favorite == null)
+            {
+                ModelState.AddModelError("", "Favorite product does not exists");
+                return StatusCode(422, ModelState);
+            }
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (!_productRepository.DeleteFavorite(favorite))
+            {
+                ModelState.AddModelError("", "Something went wrong when creating a favorite");
+                return StatusCode(500, ModelState);
+            }
+            
+
+            return Ok("Success");
         }
     }
 }

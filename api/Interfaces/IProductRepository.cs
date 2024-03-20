@@ -8,7 +8,7 @@ namespace api.Interfaces
         ICollection<Product> GetProducts();   
         ICollection<Product> GetFavoriteProducts(int userId);
         bool CreateFavorite(FavoriteDto favorite);
-        bool DeleteFavorite(int userId, int productId);
+        bool DeleteFavorite(FavoriteDto favorite);
         bool Save();   
     }
 }

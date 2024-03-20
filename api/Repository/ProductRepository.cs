@@ -36,15 +36,15 @@ namespace api.Repository
             return Save();
         }
 
-        public bool DeleteFavorite(int userId, int productId)
+        public bool DeleteFavorite(FavoriteDto favorite)
         {
-            var favorite = _context.FavoriteProducts.Where(
-                f => f.ProductId == productId && f.UserId == userId).FirstOrDefault();
+            var _favorite = _context.FavoriteProducts.Where(
+                f => f.ProductId == favorite.ProductId && f.UserId == favorite.UserId).FirstOrDefault();
 
-            if(favorite == null)
+            if(_favorite == null)
                 return false;
             
-            _context.Remove(favorite);
+            _context.Remove(_favorite);
             return Save();
         }
 

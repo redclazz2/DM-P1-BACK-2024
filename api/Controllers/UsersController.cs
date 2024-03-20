@@ -99,7 +99,7 @@ namespace api.Controllers
                 Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:Token").Value!)
             );
 
-            //Algorithm to use in JWT
+            //Algo to use in JWT signa.
             var cred = new SigningCredentials(key,SecurityAlgorithms.HmacSha512Signature);
 
             //Build the token
